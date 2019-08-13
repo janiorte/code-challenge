@@ -15,11 +15,11 @@ Examples:
 
 A simple staircase with 15 steps. In 7 strides, you've climbed 14 steps. However, you still have one step left, so you must use an additional stride to get to the top.
 
-Input: {15, 15}, StepsPerStride: 2, Returns: 18
+	Input: {15, 15}, StepsPerStride: 2, Returns: 18
 
 This time, there are two flights with a landing in between. 8 strides to get to the first landing, 2 strides to turn around, and 8 more strides to get to the top makes 8+2+8=18 strides.
 
-Input: {5,11,9,13,8,30,14}, StepsPerStride: 3, Returns: 44 
+	Input: {5,11,9,13,8,30,14}, StepsPerStride: 3, Returns: 44 
 
 # Exercise 2 – Safest place in the galaxy
 
@@ -34,9 +34,9 @@ Output:
 Output T integers, one per test case each on its own line, representing the square of distance to the nearest bomb from the safest point in the cube.
  
 Constraints:
-•	T = 50
-•	1 <= N <= 200
-•	All bombs coordinates will be in [0, 1000], both inclusive
+- T = 50
+- 1 <= N <= 200
+- All bombs coordinates will be in [0, 1000], both inclusive
  
 # Exercise 3 – Adding this, adding that
 ```
@@ -53,16 +53,18 @@ var result = AddRecursive(f, s);
 return new AddResult(f, s, result);
 }
 ```
-E.G.
-Input : { 1, 1, 1 }, { 1, 1, 1 }
-Result: {2,2,2}
 
-Input : { 1, 1, 255 }, {0, 0, 1 }
-Result: {1,2,0}
+E.G.
+
+	Input : { 1, 1, 1 }, { 1, 1, 1 }
+	Result: {2,2,2}
+
+	Input : { 1, 1, 255 }, {0, 0, 1 }
+	Result: {1,2,0}
 
 Conditions:
-•	You can assume inputs f & s are never null, and are always of the same length. 
-•	The algorithm should be non-destructive to the inputs.
-•	The algorithm should be able to handle large input lengths, of a couple of thousand values, but the input will never be large enough to cause a stack overflow.
+- You can assume inputs f & s are never null, and are always of the same length. 
+- The algorithm should be non-destructive to the inputs.
+- The algorithm should be able to handle large input lengths, of a couple of thousand values, but the input will never be large enough to cause a stack overflow.
 
 Solve with a recursive method.
