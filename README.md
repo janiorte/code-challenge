@@ -39,7 +39,7 @@ Constraints:
 •	All bombs coordinates will be in [0, 1000], both inclusive
  
 # Exercise 3 – Adding this, adding that
-
+```
 [Test]
 [TestCaseSource("Add_Source")]
 public AddResult Add_UsingARecursiveAlgorithm_ValuesAreAdded(byte[] f, byte[] s)
@@ -52,7 +52,7 @@ var result = AddRecursive(f, s);
 // Assert
 return new AddResult(f, s, result);
 }
-
+```
 E.G.
 Input : { 1, 1, 1 }, { 1, 1, 1 }
 Result: {2,2,2}
